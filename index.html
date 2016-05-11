@@ -1,0 +1,75 @@
+<!-- Frontend -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Salary</title>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		COLORS = [
+			'red',
+			'indigo',
+			'pink',
+			'purple',
+			'blue',
+			'deep-purple',
+			'light-blue',
+			'cyan',
+			'teal',
+			'light-green',
+			'green',
+			'orange',
+			'brown',
+			'deep-orange',
+			'blue-grey'
+		];
+		var randomInt = Math.floor(Math.random() * (COLORS.length));
+		RANDOM_COLOR = COLORS[randomInt];
+
+		COLOR_CHANGE = function () {
+			$('.colored').each(function(index) {
+  			$(this).addClass(RANDOM_COLOR);
+		});
+		}
+	</script>
+</head>
+<body>
+<div class="container">
+	<h4 class="center-align">Salary</h4>
+		<div id="calendar">
+			
+		</div>
+</div>
+
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+    <h2></h2>
+    <div class="row">
+	    <div class="col s1">
+	    	<h5>Hours: </h5>
+	    	<div class="input-field">
+	          <input min="0" max="24" id="hours" type="number" class="validate">
+        	</div>
+	    </div>
+    </div>	
+    </div>
+    <div class="modal-footer">
+    	<button type="submit" id="set" class="modal-action modal-close waves-effect waves-green btn-flat">Set</button>
+    </div>
+  </div>
+<!-- Default scripts -->
+	<script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+	<script src="bower_components/moment/min/moment.min.js"></script>
+	<script src="bower_components/underscore/underscore-min.js"></script>
+
+<!-- Calendar and core scripts -->
+<script src="bower_components/clndr/clndr.min.js"></script>
+	<script src="core.js"></script>
+</body>
+</html>
+

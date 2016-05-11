@@ -1,0 +1,68 @@
+.row {
+	margin-bottom: 0;
+}
+
+.controlls-month {
+	width: 50%;
+	line-height: 75px;
+}
+
+.controlls-button {
+	width: 25%;
+	line-height: 75px;
+	cursor: pointer;
+}
+
+div.controlls-button, .controlls-month {
+	display: inline-block;
+	text-align: center;
+	font-size: 40px;
+}
+
+.controlls {
+	height: 50px;
+	text-align: center;
+}
+
+.day-contents {
+	font-size: 30px;
+}
+
+.adjacent-month {
+	color: #555;
+}
+
+.header-day {
+	font-size: 26px;
+}
+
+td, th {
+	border-radius: 0;
+	text-align: center;
+	height: 100px;
+}
+
+thead {
+	border: none;
+}
+
+.clndr { 
+	color: #e8eaf6;
+}
+
+.waves-effect {
+	display: table-cell;
+}
+
+.month {
+	font-weight: 500;
+	font-size: 36px;
+}
+
+.material-icons.arrows {
+	font-size: 42px;
+}
+
+.day:hover {
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
